@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<script>
+    var numero = parseInt(prompt("Informe um número maior ou igual a 0: "))
+    var contador = 0
+   
+
+    if (numero >= 0){
+        for(var inicio = numero; inicio >= 0; inicio -= 1){
+            if (inicio % 2 != 0){
+                contador += 1
+            }
+        }
+        alert("Entre 0 e " + numero + " há " + contador + " números ímpares")
+
+    }else{
+        alert("Número inválido. Não pode ser negativo")
+    }
+
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <script>
+
+        var ano = parseInt(prompt("Insira um ano: "))
+
+        if (ano > 0){
+
+            for (var ano_sequencia = 1; ano_sequencia <= ano; ano_sequencia++){
+
+                var regra1 = (ano_sequencia % 400 == 0)
+                var regra2 = (ano_sequencia % 4 == 0) && (ano_sequencia % 100 != 0)
+
+                if (regra1 || regra2){
+                    alert(ano_sequencia)
+                }
+            }
+        
+        } else{
+            alert("Número inválido.")
+        }
+
+    </script>
+</html>

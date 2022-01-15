@@ -1,0 +1,23 @@
+<html>
+<head></head>
+
+<script>
+
+    do{
+        var gasolina = parseFloat(prompt("Qual o preço da gasolina? "))
+        var alcool = parseFloat(prompt("Qual o preço do álcool? "))
+
+        resultado = gasolina / alcool 
+        if (resultado > 0.7){
+            alert("Vale mais a pena pagar pela gasolina")
+        }else if(resultado < 0.7){
+            alert("Vale mais a pena pagar pelo álcool")
+        } else{
+            alert("Tanto faz pagar pelo álcool ou gasolina")
+        }
+
+        var repetir_loop = prompt("Deseja realizar uma nova consulta (s/n)? ")
+    }while(repetir_loop == "s" || repetir_loop == "S")
+
+</script>
+</html>

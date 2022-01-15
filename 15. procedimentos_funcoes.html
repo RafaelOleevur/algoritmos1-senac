@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+<script>
+
+    var ladoA, ladoB
+    function inserirDados(){ //PROCEDIMENTO == não retorna um valor
+        ladoA = parseInt(prompt("Insira o lado A: "))
+        ladoB = parseInt(prompt("Insira lado B: "))
+                
+    }
+
+    function areaRetangulo (ladoA, ladoB){
+        return ladoA * ladoB   //FUNÇÃO == retorna um valor
+    }
+
+    function quadrado (ladoA, ladoB){   //FUNÇÃO == retorna um valor
+        return ladoA === ladoB
+    }
+
+    inserirDados()
+    alert(areaRetangulo(ladoA, ladoB))
+    alert(quadrado(ladoA, ladoB))
+
+
+</script>
+
+
+</body>
+
+</html>

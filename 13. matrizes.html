@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+
+    <script>
+//definição da matriz, definindo um número de linhas
+var matriz = [[],[]]
+
+//alimentar valores da matriz
+for(var linha=0;linha<2;linha++){
+  for(var coluna=0;coluna<2;coluna++){
+    //preencheendo cada coluna da matriz
+    //uso de função randômica
+    //matriz[linha][coluna] = parseInt(Math.random()*500)
+    matriz[linha][coluna] = parseInt(prompt('Linha ' + linha + ' Coluna ' + coluna))
+  }
+}
+
+//alert(matriz)
+
+//impressao da matriz
+for(var linha=0;linha<3;linha++){
+  alert(matriz[linha])
+}
+    </script>
+
+</html>

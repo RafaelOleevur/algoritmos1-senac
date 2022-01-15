@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <script>
+        
+        var numeros = []
+        var numeros2 = []
+        var somaVetores = []
+
+        var soma = 0, soma2 = 0, media = 0
+
+            //pegar valores para o vetor numeros
+            for (var i = 0; i < numeros.length; i++){
+                numeros[i] = parseInt(prompt("Insira um número inteiro: "))                
+
+            }
+
+            //pegar valores para o vetor numeros2
+            for (var x = 0; x < numeros2.length; x++){
+                numeros2[x] = parseInt(prompt("Insira um número inteiro: "))                
+
+            }
+
+            //somando os elementos de cada vetor; somando-se os elementos com mesmo índice (criando-se um novo vetor somaVetores)
+            for (var y = 0; y < 10; y++){
+                    soma += numeros[y]
+                    soma2 += numeros2[y]
+                    somaVetores [y] = numeros[y] + numeros2[y]
+            }
+
+            //tirando a media da soma dos elementos de mesmo índice
+            for (var z = 0; z < 10; z++){
+                media += somaVetores[z] / 10
+
+            }
+            
+    </script>   
+</html>

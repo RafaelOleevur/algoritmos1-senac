@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+
+    <script>
+        var ano_atual = parseInt(prompt("Qual o ano atual? "))
+        var ano_nasceu = parseInt(prompt("Em que ano você nasceu? "))
+
+        var idade = ano_atual - ano_nasceu
+
+        if (ano_atual < 1 || ano_nasceu < 1 || ano_atual < ano_nasceu){ //validação do que foi inserido
+            alert("número inválido")
+        } else{
+            idade >= 16 ? alert("Você pode votar") : alert("Você não pode votar") //operador ternário
+        }
+    </script>
+</html> 

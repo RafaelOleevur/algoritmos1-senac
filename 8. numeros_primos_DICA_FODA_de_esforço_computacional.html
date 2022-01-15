@@ -1,0 +1,36 @@
+<html>  
+<head>  </head>
+<script>
+    //exercicio para identificar todos os numeros primos até o número inserido pelo usuário
+    var numero = parseInt(prompt("Insira um número positivo: "))
+    var primo
+
+    if (numero > 1){
+        for (var sequencia = 2; sequencia <= numero; sequencia++){
+                    //numero por numero da sequencia até chegar no numero informado
+            primo = true
+            
+                //o pulo do gato aqui é, se primo já é falso, 
+                //o proximo laço-for não precisa continuar 
+                //(já pode pular para o próximo numero -- 
+                //isso diminui o esforço computacional)
+
+            for (var i = 2; i < sequencia && primo; i++){ //esse loop faz a testagem a fim de verificar se o numero (chamado sequencia) é primo ao ser dividido, cada momento, por um valor i (2, 3, 4, ...).
+              if(sequencia % i == 0){                     //caso seja divisível por um numero, já não é primo. Logo, ele entra na condicional (primo = false) e sai do loop e vai para o proximo loop-for principal
+                 primo = false
+             }
+            }
+                //basicamente, no exercício, todos os números na sequencia precisam ser testados. O pulo do gato está no loop-for dentro do outro loop-for, visto que ele já para de verificar se é numero primo no momento que ele é divisivel por algum numero (i)
+            if(primo){
+               alert(sequencia)
+            }
+
+        }
+                
+    } else {
+        alert("Número inválido")
+    }
+</script>
+
+
+</html>

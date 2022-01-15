@@ -1,0 +1,34 @@
+<html>
+<head><meta charset="utf-8"/></head> 
+
+<script>
+   
+    var numero 
+    var anterior_maior 
+    var anterior_menor 
+
+    for(var i = 1; i <= 10; i++){
+        numero = parseInt(prompt("Insira um número: "))
+
+        if (i == 1){ //primeira passagem no laço -- 
+                    //obter o primeiro número informado como referência
+                    //tanto para maior quanto menor numero da sequencia
+            anterior_maior = numero
+            anterior_menor = numero
+        }
+                    //nas próximas passagens do laço,
+                    //testará: se o proximo n. indicado for:
+        if (numero > anterior_maior){ //maior -- ele se tornará o maior numero
+            anterior_maior = numero
+        } else if (numero < anterior_menor){ //menor -- ele se tornará o menor numero
+            anterior_menor = numero
+        }
+    }
+    alert("O maior número da sequência é " + anterior_maior + " e o menor número é " + anterior_menor)
+
+
+
+</script>
+
+
+</html>
